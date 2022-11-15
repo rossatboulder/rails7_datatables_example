@@ -1,12 +1,12 @@
 import $ from 'jquery'
 import DataTable from 'datatables.net-bs5'
 import 'datatables.net-buttons-bs5'
+import 'datatables.net-buttons-html5'
 import 'jquery-highlight'
-
-// I can get basic dataTable working by commenting out the following 6 lines:
 import JSZip from 'jszip'
 import pdfMake from 'pdfmake'
-import pdfFonts from 'pdfmake/build/vfs_fonts'
+import pdfFonts from 'pdfmake-fonts'
+
 DataTable.Buttons.jszip(JSZip)
 DataTable.Buttons.pdfMake(pdfMake)
 pdfMake.vfs = pdfFonts.pdfMake.vfs
